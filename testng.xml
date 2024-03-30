@@ -1,0 +1,8 @@
+<suite name="Suite">
+<parameter name="Browser" value="Chrome"/>
+<test thread-count="5" name="Test2">
+<classes>
+<class name="mavgit.mavgit.WebTest"/>
+</classes>
+</test>
+</suite>
