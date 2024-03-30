@@ -1,10 +1,4 @@
-pipeline {
-    agent any{
-        node {
-            label 'my_pc'
-            }
-    }
-    
+pipeline {    
     stages {
 
          stage('Checkout') {
