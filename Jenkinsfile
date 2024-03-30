@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'This is building stage'
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
         
         stage('Test') {
             steps {
                 echo 'This is testing stage'
-                sh 'mvn test'
+                bat 'mvn test'
             }
         }
         
@@ -27,7 +27,7 @@ pipeline {
             steps {
                 // Assuming you have Selenium tests in your project
                 echo 'This is integration stage'
-                sh 'mvn verify'
+                bat 'mvn verify'
             }
         }
         
