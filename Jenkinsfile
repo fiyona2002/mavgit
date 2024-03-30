@@ -2,11 +2,7 @@ pipeline {
     agent any
     
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/fiyona2002/mavgit.git'
-            }
-        }
+       
         
         stage('Build') {
             steps {
